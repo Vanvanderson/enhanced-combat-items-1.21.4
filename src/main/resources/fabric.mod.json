@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "enhancedcombatitems",
+	"version": "${version}",
+	"name": "Enhanced Combat Items",
+	"description": "This is a mod that adds items to enhance the flow of Minecraft's combat!",
+	"authors": [
+		"Vanvanderson"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/enhancedcombatitems/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"vanvanderson.enhancedcombatitems.EnhancedCombatItems"
+		],
+		"fabric-datagen": [
+			"vanvanderson.enhancedcombatitems.EnhancedCombatItemsDataGenerator"
+		],
+		"client": [
+			"vanvanderson.enhancedcombatitems.EnhancedCombatItemsClient"
+		]
+	},
+	"mixins": [
+		"enhancedcombatitems.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
